@@ -4,13 +4,146 @@
    list-style-type: none;
    text-decoration: none;
    box-sizing: border-box;
-   font-family: "Merriweather", serif;
+   font-family: "Open Sans", sans-serif;
    
 }
+/*------Geral------*/
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    gap: 20px;
+    background-color: #8b8b8b;
+}
+.conteudo{
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.conteudo::before{
+    content: " ";
+    position: absolute;
+    background-color: #2A8C82;
+    width: 40%;
+    height: 100%;
+}
+.titulo{
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+}
+.descricao{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #fff;
+}
+/*------Geral------*/
+/*------Cadastro------*/
+.conteudo-left{
+    text-align: center;
+    flex: 1 0 auto;
+    z-index: 10; 
+}
+
+.btn-button-lite {
+    padding: 30px 0;
+}
+.btn-button-lite button{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 60px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn-button-lite button:hover{
+    background-color: #fff;
+    color: #2A8C82;
+}
+/*------ Conteudo ------*/
+.conteudo-right .titulo{
+    color: #2A8C82;
+}
+.conteudo-right .descricao{
+    color:#2A8C82;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 10px;
+}
+.conteudo-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 2 0 auto; 
+}
+.redes-sociais ul {
+    display: flex;
+}
+.redes-sociais ul li{
+    padding: 10px;
+}
+.redes-sociais ul li i{
+    color: #41BFB3;
+    font-size: 20px;
+}
+form{
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 0 3px #7977773a;
+    padding: 40px;
+}
+.text-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 5px;
+    text-align: left;
+}
+.text-card label{
+    font-size: 16px;
+    font-weight: 500;
+    color: #2A8C82;
+}
+.text-card input{
+    border: none;
+    border-bottom: 2px solid #7e7c7c96;
+}
+.text-card input:focus{
+    outline: none;
+}
+.btn-button-dark{
+      padding: 10px 0;
+}
+.btn-button-dark button{
+    display: flex;
+    align-items: center;
+    color: #2A8C82;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 60px;
+    border: 1px solid #2A8C82;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn-button-dark button:hover{
+    background-color:#2A8C82;
+    color:#fff;
+}
+.login{
+    position: absolute;
+    display: none;
 }
