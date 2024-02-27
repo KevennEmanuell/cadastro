@@ -154,27 +154,3 @@ form{
     line-height: 25px;
     padding: 10px;
 }
-
-
-/*---------LOgin---------*/
-.login{
-    display: flex;
-}
-.login .conteudo-left{
-    order: 2;
-}
-.login .conteudo-right{
-    order: 1;
-}
- .conteudo.login::before{
-    content: " ";
-    position: absolute;
-    background-color: #2A8C82;
-    width: 40%;
-    height: 100%;
-    left: 60%;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-
